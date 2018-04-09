@@ -1,0 +1,55 @@
+.iconLink{
+	padding: 10px 20px;
+	align-items: center;
+	position: relative;
+	display: inline-flex;
+  .icon{
+  	width: 50px;
+  	height: 50px;
+    img{
+    	max-height: 100%;
+    	max-width: 100%;
+    }
+  }
+
+  p{
+  	margin: auto 0 auto 10px;
+  	font-weight: 300;
+  	color: rgba(121,73,106,1.00);
+  	font-size: 1.2em;
+  	line-height: 1.1;
+  }
+  span{
+  	font-weight: 400;
+  }
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 960px) {
+	.iconLink .icon{
+		width: 50px;
+		height: 50px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.iconLink{
+		padding: 5px 10px;
+	}
+	.iconLink .icon{
+		width: 40px;
+		height: 40px;
+	}
+	.iconLink p{
+		margin: auto auto auto 5px;
+		font-size: 1.3em;
+	}
+
+}

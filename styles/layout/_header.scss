@@ -1,0 +1,61 @@
+/*-------------------
+Header
+---------------*/
+
+header{
+	&.style1{
+	@include block-relative(650px, 100%);
+	@extend %z-depth-1;
+	@extend %image-bg;
+
+		.title{
+			@extend %center-vert;
+			left:20%;
+			color: white;
+			max-width: 60%;
+
+			.caption{
+
+			}
+
+		}
+
+
+
+
+
+		@media screen and (max-width: 1440px) {
+			@include block-relative(488px, 100%);
+		}
+		@media screen and (max-width: 960px) {
+			@include block-relative(325px, 100%);
+			.title{
+				left: 10%;
+				max-width: 80%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			@include block-relative(100vw, 100%);
+			.title{
+				.caption{
+					display: none;
+				}
+			}
+
+
+		}
+
+	}
+}
+
+
+
+
+// header>h3::after{
+// 	font-family: 'Material Icons';
+// 	content: '\E5DB';
+// 	vertical-align: middle;
+// 	display: block;
+// 	color: white;
+//
+// }
