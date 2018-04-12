@@ -25,11 +25,11 @@
 .icon-row{
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 .icon-col{
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  flex-flow: row wrap;
 }
 
 

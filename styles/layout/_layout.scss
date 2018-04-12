@@ -1,4 +1,9 @@
-section.row{
+.center-row{
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
+
+  // @media screen and (max-width: 600px) {
+  //   flex-flow: column nowrap !important;
+  //   }
 }
